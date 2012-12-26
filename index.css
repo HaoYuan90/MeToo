@@ -1,0 +1,217 @@
+.test{
+width : 400px;
+/*background : white;*/
+
+}
+.rightPanel
+{
+  /*  background-image : url('rightPanel.jpg');
+    background-repeat:no-repeat;
+    background: #C2FFA3;*/
+    top:200px;
+    position:absolute;
+    left:300px;
+
+}
+.leftPanel
+{
+width : 200px;
+position:absolute;
+
+
+background: #B8FF94;
+background-image : url('images/bgleft.gif');
+background-repeat: no-repeat;
+background-size:200px 450px;
+background-position:5px 220px;
+-webkit-box-shadow: 0 15px 10px #000000;
+}
+
+.logo
+{
+display: block; 
+width:200px;
+height:200px;
+border: 15px solid #ccc;
+background-image : url('images/haha.png'); 
+
+background-position:center top; 
+ 
+}
+
+.myButton{
+display: block;
+top:300px;
+left:30px;
+-webkit-transition: all 0.3s ease-out;
+    	background: #cbcbcb url('images/border.png') no-repeat;
+
+	color: #174867;
+	
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+position:absolute;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+}
+
+.myButton:hover 
+{ 
+    background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+
+} 
+
+
+
+.friendButton{
+display: block; 
+top:340px;
+left:30px;
+
+width:145px;
+position:absolute;
+
+-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url('images/border.png') no-repeat;
+	color: #174867;
+
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+
+}
+
+.friendButton:hover 
+{ 
+   
+    background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+}
+
+
+.searchButton{
+display: block; 
+top:380px;
+left:30px;
+
+width:145px;
+position:absolute;
+
+
+-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url('images/border.png') no-repeat;
+	color: #174867;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+
+}
+
+.searchButton:hover 
+{ 
+       background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+}
+.noteButton{
+display: block;
+top:420px;
+left:30px;
+
+width:145px;
+
+position:absolute;
+
+-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url('images/border.png') no-repeat;
+	color: #174867;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+}
+
+.noteButton:hover 
+{ 
+    background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+
+} 
+
+.newButton{
+display: block; 
+top:460px;
+left:30px;
+
+width:145px;
+position:absolute;
+
+-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url('images/border.png') no-repeat;
+	color: #174867;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+
+}
+
+.newButton:hover 
+{ 
+      background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+}
+
+.logoutButton{
+display: block; 
+top:500px;
+left:30px;
+
+width:145px;
+position:absolute;
+
+-webkit-transition: all 0.3s ease-out;
+	background: #cbcbcb url('images/border.png') no-repeat;
+	color: #174867;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 100px;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px #888;
+}
+
+.logoutButton:hover 
+{ 
+   
+    background: #ebebeb url('images/border.png') no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 20px;
+}
+
+
+
+
+.card{
+height:200px;
+width:200px;
+padding-right:20px;
+padding-left:10px;
+background-color: #FFFFCC;
+overflow:hidden;
+border-radius: 15px;
+-webkit-box-shadow: 0 5px 5px #000000;
+-moz-box-shadow: 0 5px 5px #000000); box-shadow: 0 5px 5px #000000;
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <title>Me!Fool</title>
+        <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+        <script src="touch/sencha-touch.js" type="text/javascript"></script>
+        <script src="models.js" type="text/javascript"></script>
+        
+        <script src="sections/homePage.js" type="text/javascript"></script>
+        <script src="sections/menuBar.js" type="text/javascript"></script>
+        <script src="sections/friendsSection.js" type="text/javascript"></script>
+        <script src="sections/viewMistakeSection.js" type="text/javascript"></script>
+        <script src="sections/searchSection.js" type="text/javascript"></script>
+        
+        <script src="actions/replyAction.js" type="text/javascript"></script>
+        <script src="actions/postAction.js" type="text/javascript"></script>
+        <script src="actions/searchAction.js" type="text/javascript"></script>
+        
+        <script src="appPagetest.js" type="text/javascript"></script>
+        <link href="touch/resources/css/sencha-touch.css" rel="stylesheet" type="text/css" />
+        <link href="appPage.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-25826835-1']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+    </head>
+    
+    <body>
+        <div id = "fb-root"></div>
+        <script type = "text/javascript">
+            var userID;
+            var friends;
+            
+            FB.init({appId: '152141811543304', status: true, cookie: true, xfbml: true});
+            
+            FB.getLoginStatus(function(response) {
+                if (response.session) {
+                    userID = response.session.uid;
+                } else {
+                // no user session available, someone you dont know
+                }
+            });
+            
+            FB.api(
+                {
+                   method: 'friends.getAppUsers',
+                   urls: 'facebook.com,developers.facebook.com'
+                },
+                function(response) {
+                   friends = response;
+                }
+            );
+
+            function fb_logout() {
+                FB.logout(function(response) {
+                    window.location = "index.html";
+                });
+            }
+        </script>
+    </body>
+
+</html>
